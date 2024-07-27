@@ -27,8 +27,8 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
     max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 0 ;
+    padding: 0 0px;
     background-color: #f4f4f4;
 }
 
@@ -132,6 +132,8 @@ body {
     .hamburger {
         display: block;
     }
+
+   
 }
 
 /* Blog Hero Section */
@@ -261,6 +263,7 @@ img {
 
 
 @media (max-width: 768px) {
+   
     .footer-credits {
         text-align: center;
         margin-top: 20px;

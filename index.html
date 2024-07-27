@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional blog for Denis Sanchez Leyva. Full Stack Developer with over 15 years of experience.">
+    <title>DSL Blog | Denis Sanchez Leyva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/blog.css">
+
+
+    <style>
+        /* Estilos del spinner */
+        #spinner {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        .lf a {
+            position: absolute;
+            left: 5%;
+            text-decoration: none;
+        }
+
+
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 30px;
+            border: 5px solid #3498db;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Ocultar el spinner */
+        #spinner.hidden {
+            display: none;
+        }
+       
+    </style>
+
+  <script type="module" crossorigin src="/assets/index-BEsBeX0m.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CJhkMPiL.css">
+</head>
+
+<body>
+    <header class="header">
+      
+            <nav>
+                <div class="nav-container">
+                   
+                    <a href="/" class="logo">DSL</a>
+                    <div class="nav-links">
+                        <li><a href="https://dslijplatform.netlify.app/">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </div>
+                    <div class="hamburger" onclick="toggleMobileNav()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                 
+                </div>
+                <div id="mobile-nav" class="mobile-nav">
+                    <a href="https://dslijplatform.netlify.app/" onclick="toggleMobileNav()">Home</a>
+                    <a href="#about" onclick="toggleMobileNav()">About</a>
+                    <a href="#contact" onclick="toggleMobileNav()">Contact</a>
+                   
+                </div>
+            </nav>
+        
+    </header>
+
+    <section class="blog-hero">
+        <div class="container">
+            <h1>B L O G</h1>
+            <p>Articles and tutorials about web development and technology.</p>
+        </div>
+    </section>
+
+    <section class="blog-posts">
+        <div id="spinner"></div> <!-- Spinner -->
+        <div class="container" id="blog-posts-container">
+            <!-- Los posts del blog se cargarán aquí dinámicamente -->
+        </div>
+    </section>
+
+
+    <section id="about" class="section about">
+        <div class="container fade-in">
+            <img src="./images/denisl.jpg" alt="Your Name" class="profile-pic">
+            <div class="content">
+                <h1>About</h1>
+                <p>Welcome to my blog!</p>
+                <p>I'm Denis Sanchez Leyva, passionate about web development and technology. This space is dedicated to
+                    sharing my knowledge and experiences in the world of development, as well as offering valuable
+                    resources for those looking to improve their skills in this dynamic and ever-evolving field.</p>
+
+                <h2>What will you find here?</h2>
+
+                <h3>Technical book excerpts</h3>
+                <p>Here I'll share excerpts and summaries from my technical books, exploring topics ranging from
+                    programming and web design to best practices in software development. My goal is to provide a clear
+                    and accessible view of complex concepts, so you can apply them in your own projects.</p>
+
+                <h3>Tutorials</h3>
+                <p>I'll publish practical and detailed tutorials that will guide you step-by-step in learning new
+                    technologies and tools. Whether you're just starting in web development or looking to expand your
+                    knowledge, you'll find useful resources to help you advance in your career.</p>
+
+                <h3>Web development articles</h3>
+                <p>I'll also share articles addressing current trends, tips and tricks, and reflections on the future of
+                    web development. My intention is to foster a learning community where we can all grow and share our
+                    experiences.</p>
+
+                <h2>Join the community</h2>
+                <p>I invite you to join this community of web development enthusiasts. Feel free to leave your comments,
+                    questions, and suggestions on the articles. I'm here to assist you on your learning journey and to
+                    share together the exciting world of technology.</p>
+
+                <p>Thank you for visiting my blog! I hope you find valuable information here and that it inspires you to
+                    keep exploring and creating.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section contact">
+        <div class="container content">
+            <h1>Contact</h1>
+            <p>If you would like to get in touch, please email me at <a
+                    href="mailto:denisijcu266@gmail.com">denisijcu266@gmail.com</a>.</p>
+            <br>
+            <br>
+            <br>
+        </div>
+
+    </section>
+
+
+
+
+    <footer>
+        <div class="lf">
+            <a href="https://dslijplatform.netlify.app/" title="Go to DSLPlatform">Home</a>
+        </div>
+
+
+
+        <div class="social-icons">
+            <a href="https://www.youtube.com/@denissanchezleyva8954" target="_blank" class="fab fa-youtube"></a>
+            <a href="https://www.facebook.com/denis.sanchez.3914" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/denis-sanchez-543064167/" target="_blank" class="fab fa-linkedin"></a>
+            <a href="https://github.com/Denisijcu" target="_blank" class="fab fa-github"></a>
+        </div>
+
+        <div class="footer-credits">
+            <p>&copy; 2024 Denis Sanchez Leyva. All rights reserved.</p>
+        </div>
+
+
+
+    </footer>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelector('.container').classList.add('fade-in');
+        });
+
+
+
+        function toggleMobileNav() {
+            var mobileNav = document.getElementById('mobile-nav');
+            var hamburger = document.querySelector('.hamburger');
+            mobileNav.classList.toggle('show');
+            hamburger.classList.toggle('active');
+        }
+
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-nav').classList.remove('show');
+                document.querySelector('.hamburger').classList.remove('active');
+            });
+        });
+
+        function speakText() {
+            const utterance = new SpeechSynthesisUtterance(text);
+            speechSynthesis.speak(utterance);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

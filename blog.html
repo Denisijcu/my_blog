@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/blog.css">
+    
+    <style>
+          /* Estilos del spinner */
+          #spinner {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        .lf a {
+            position:absolute;
+            left: 5%;
+            text-decoration: none;
+        }
+ 
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        /* Ocultar el spinner */
+        #spinner.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      
+        <a href="/" style="position: absolute; right: 2%;">&larr; Back</a>
+        <img src="./images/post1.png" alt="Image Loading..." id="post-image" class="header-image">
+        <h1 id="post-title"></h1>
+        <h2 id="post-author"></h2>
+        <p id="post-date"></p>
+        <a href="#" class="buy-button" id="buy-button" target="_blank" rel="noopener noreferrer">Buy Now on Amazon</a>
+    </header>
+
+    <div id="spinner"></div> <!-- Spinner -->
+    <main id="post-content">
+        <!-- Post content will be loaded here -->
+    </main>
+
+    <div class="interaction-bar">
+        <div class="like-dislike">
+            <button id="like-btn">👍 <span id="like-count">0</span></button>
+            <button id="dislike-btn">👎 <span id="dislike-count">0</span></button>
+        </div>
+        <div class="views">
+            <span id="view-count">0</span> views
+        </div>
+    </div>
+
+    <section class="comments-section">
+        <h3>Comments</h3>
+        <div id="comments-container">
+            <!-- Comments will be loaded here dynamically -->
+        </div>
+        <form class="comment-form" id="comment-form">
+            <h4>Leave a Comment</h4>
+            <input type="text" id="comment-name" placeholder="Your name" required>
+            <textarea placeholder="Your comment" rows="4" id="comment-text" required></textarea>
+            <input type="submit" value="Post Comment">
+        </form>
+    </section>
+   
+
+    <footer>
+        <a href="/" style="position: absolute; right: 2%;">&larr; Back</a>
+     
+        <div class="social-icons">
+            <a href="https://www.youtube.com/@denissanchezleyva8954" target="_blank" class="fab fa-youtube"></a>
+            <a href="https://www.facebook.com/denis.sanchez.3914" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/denis-sanchez-543064167/" target="_blank" class="fab fa-linkedin"></a>
+            <a href="https://github.com/Denisijcu" target="_blank" class="fab fa-github"></a>
+        </div>
+
+        <div class="footer-credits">
+            <p>Stay tuned for more insights, tutorials, and updates on my blog. If you have any questions or would like to share your experiences with Jetpack Compose, feel free to reach out. Happy coding!</p>
+            <p>&copy; 2024 Denis Sanchez Leyva. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script type="module" src="/blog.js"></script>
+</body>
+</html>

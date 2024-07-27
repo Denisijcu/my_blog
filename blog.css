@@ -1,0 +1,272 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --light-bg: #f4f4f4;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Body */
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f4f4f4;
+}
+
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.header.scrolled {
+    background-color: rgba(44, 62, 80, 0.95);
+    box-shadow: var(--shadow);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Blog Hero Section */
+.blog-hero {
+    background: var(--light-bg);
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.blog-hero h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.blog-hero p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Blog Posts Section */
+.blog-posts {
+    padding: 50px 0;
+}
+
+.blog-post {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 30%;
+    height: 400px;
+}
+
+.post-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.post-content h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.post-content p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.read-more:hover {
+    color: #c0392b;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 60px 0 20px;
+    height: 300px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-nav {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 15px;
+    transition: var(--transition);
+}
+
+.footer-nav a:hover {
+    color: var(--secondary-color);
+}
+
+.social-icons {
+    flex: 1;
+    text-align: center;
+}
+
+.social-icons a {
+    color: var(--white);
+    font-size: 1.7rem;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-credits {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .footer-credits {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .blog-post img {
+        width: 30%;
+        height: auto;
+    }
+}

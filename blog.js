@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('spinner').classList.add('hidden');
   
   
-    mytext = postData.content;
+    mytext = document.getElementById('post-content').innerText;
  
 
     loadComments(postData.comments);

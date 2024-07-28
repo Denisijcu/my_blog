@@ -295,6 +295,11 @@ img {
         min-height: auto;
         margin-bottom: 0px;
     }
+
+    .header-image{
+       max-width: 50%;
+       max-height: auto;
+    }
    
     .footer-credits {
         text-align: center;

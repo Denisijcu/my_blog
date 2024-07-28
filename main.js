@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('spinner').classList.add('hidden');
 
     posts.forEach(post => {
-        console.log(post)
+       
          // Muestra el spinner
        
         const postElement = document.createElement('article');

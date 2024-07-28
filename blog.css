@@ -32,7 +32,16 @@ body {
     background-color: #f4f4f4;
 }
 
-
+pre {
+    background-color: #0d0202;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
 /* Container */
 .container {
     max-width: 1200px;

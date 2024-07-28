@@ -312,4 +312,9 @@ img {
        font-size: 0.9rem;
        text-align: left;
    }
+   
+   footer p {
+      font-size: 0.6rem;
+      text-align: center;
+   }
 }

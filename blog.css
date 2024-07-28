@@ -272,10 +272,28 @@ img {
     body {
         line-height: 1.5;
     }
+    p {
+        text-align: left;
+    }
+    .blog-post {
+        display:inline-block;
+        margin-bottom: 2px;
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        transition: var(--transition);
+    }
+    .container{
+       height: auto;
+       text-align: center;
+       padding: 8px;
+    }
 
     img {
-        width: 200px;
-        height: 200px
+        min-width: 300px;
+        min-height: auto;
+        margin-bottom: 0px;
     }
    
     .footer-credits {
@@ -287,10 +305,11 @@ img {
         height: auto;
     }
     .post-content h2 a{
-        font-size: 0.7rem;
+        font-size: 1.4rem;
      
    }
    .post-content p {
-       font-size: 0.6rem;
+       font-size: 0.9rem;
+       text-align: left;
    }
 }

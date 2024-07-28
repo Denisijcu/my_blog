@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const postElement = document.createElement('article');
         postElement.classList.add('blog-post');
         postElement.innerHTML = `
-            <img src='${post.imageUrl}' alt="Blog Post Image" width="400" height="200">
+            <img src='${post.imageUrl}' alt="Blog Post Image">
             <div class="post-content">
                 <h2><a href="/blog.html?postId=${post.postId}">${post.title}</a></h2>
                 <p>${post.description}</p>

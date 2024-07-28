@@ -129,10 +129,15 @@ body {
         margin: 10px 0;
     }
 
+
+
     .hamburger {
         display: block;
     }
 
+   
+
+  
    
 }
 
@@ -263,6 +268,15 @@ img {
 
 
 @media (max-width: 768px) {
+
+    body {
+        line-height: 1.5;
+    }
+
+    img {
+        width: 200px;
+        height: 200px
+    }
    
     .footer-credits {
         text-align: center;
@@ -272,4 +286,11 @@ img {
         width: 30%;
         height: auto;
     }
+    .post-content h2 a{
+        font-size: 0.7rem;
+     
+   }
+   .post-content p {
+       font-size: 0.6rem;
+   }
 }

@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const posts = await fetchAllPosts();
 
     document.getElementById('spinner').classList.add('hidden');
+     // Ordenar los posts de forma descendente por fecha
+     //posts.sort((a, b) => new Date(b.date - new Date(a.date)));
+     posts.sort((a,b) => (b.postId - a.postId))
 
     posts.forEach(post => {
        

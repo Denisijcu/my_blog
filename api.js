@@ -1,4 +1,4 @@
-const API_URL = 'https://script.google.com/macros/s/AKfycbzHItP3rgLkyiJMGK0nt_1x9AZwwRyytT11vZJtEprhQrx2Csg5OTcdyk_wmV1urIbF/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbxgqI3FJXHQXEkAXzrB6FO_iRoAtAHA-CGWZ-OaCwXvndX3gxNw2YplR4VOGPMp9t9l/exec';
 
 export async function fetchAllPosts() {
     const response = await fetch(`${API_URL}?action=getAllPosts`);
